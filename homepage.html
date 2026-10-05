@@ -1,52 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Danielle Modesti">
-    <meta name="keywords" content="website, project, html, personal">
-    <meta name="description" content="This is a practical HTML activity in which I create a multiple page website using pure HTML.">
-    <title>Basic HTML Website</title>
+    <meta name="keywords" content="Website, project, portfolio, html, css, personal, professional">
+    <meta name="description"
+        content="This is a practical CSS activity in which I create a multiple page portfolio website.">
+    <!-- Could have some og tags -->
+    <title>CSS Personal Portfolio</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Ctext%20y=%22.9em%22%20font-size=%2290%22%3E🐈‍⬛%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Black_colour.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Website logo" width="100">
-            <span>Danielle Modesti</span>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="https://placehold.co/100x100/000000/FFF" alt="Website logo" width="100"
+                height="100">
+            <h1>Danielle Modesti</h1>
         </div>
         <nav>
-            <ul>
+            <ul class="header__ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="articles.html">Articles</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul> 
+            </ul>
         </nav>
-        <h1>Frontend Developer</h1>
     </header>
-    <main>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#html-only-portfolio-link">HTML Only Portfolio</a></li>
+    <section class="hero">
+        <h2 class="hero__title">Frontend Developer</h2>
+    </section>
+    <main class="main">
+        <section class="section">
+            <h2 class="section__title projects">Projects</h2>
+            <ul class="section__ul">
+                <li>
+                    <a href="#html-only-portfolio-link">HTML Only Portfolio</a>
+                </li>
                 <li><a href="#calculator-link">Calculator</a></li>
                 <li><a href="#quiz-app-link">Quiz App</a></li>
                 <li><a href="#countdown-timer-link">Countdown Timer</a></li>
-                <li><a href="#product-upcoming-page-link">Product Upcoming Page</a></li>
+                <li>
+                    <a href="#product-upcoming-page-link">Product Upcoming Page</a>
+                </li>
             </ul>
         </section>
-        <section>
-            <h2>Work Experience</h2>
-            <h3><a href="https://roadmap.sh/" target="_blank">roadmap.sh</a></h3>
-            <p>Solved all the frontend projects</p>
-            <p><a href="#roadmaps-sh-profile-link">Visit my Profile</a></p>
-            <h3><a href="https://github.com/" target="_blank">OpenSource Work</a></h3>
-            <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-            <p><a href="#github-profile-link">Visit my GitHub Profile</a></p>
+        <section class="section work-experience">
+            <h2 class="section__title work-experience__title">
+                Work Experience
+            </h2>
+            <div class="experience-item">
+                <h3>
+                    <a href="https://roadmap.sh/" target="_blank">roadmap.sh</a>
+                </h3>
+                <p>Solved all the frontend projects</p>
+                <p>
+                    <a href="#roadmaps-sh-profile-link">Visit my Profile</a>
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>
+                    <a href="https://github.com/" target="_blank">OpenSource Work</a>
+                </h3>
+                <p>
+                    Contributed to 50 opensource projects. Made my own
+                    projects with 200 GitHub Stars.
+                </p>
+                <p>
+                    <a href="#github-profile-link">Visit my GitHub Profile</a>
+                </p>
+            </div>
         </section>
-        <section>
-            <h2>Education</h2>
-            <p>Graduated with 3.76 out of 4 CGPA. Won Some Hackathon. Organized 30 sessions.</p>
+        <section class="section education">
+            <h2 class="section__title no-border education__title">
+                Education
+            </h2>
+            <p>
+                Graduated with 3.76 out of 4 CGPA. Won Some Hackathon.
+                Organized 30 sessions.
+            </p>
             <p>Courses I took:</p>
             <ul>
                 <li>Object Oriented Programming</li>
@@ -60,33 +101,52 @@
                 <li>Discreet Mathematics</li>
             </ul>
         </section>
-        <section>
-            <h2>Reviews from my Teachers</h2>
-            <blockquote>
-                <p>Danielle Modesti was a brilliant student; always stood out with her assignments.</p>
-                <footer>
+        <section class="section reviews">
+            <h2 class="section__title no-border reviews__title">
+                Reviews from my Teachers
+            </h2>
+            <blockquote class="reviews__bq">
+                <p>
+                    Danielle Modesti was a brilliant student; always stood
+                    out with her assignments.
+                </p>
+                <footer class="reviews__footer">
                     <cite>Jane Doe</cite><br>
                     Assistant Professor
                 </footer>
             </blockquote>
-            <blockquote>
-                <p>Danielle Modesti was a brilliant student; always stood out with her assignments.</p>
-                <footer>
+            <blockquote class="reviews__bq">
+                <p>
+                    Danielle Modesti was a brilliant student; always stood
+                    out with her assignments.
+                </p>
+                <footer class="reviews__footer">
                     <cite>Jane Doe</cite><br>
                     Assistant Professor
                 </footer>
             </blockquote>
-            <blockquote>
-                <p>Danielle Modesti was a brilliant student; always stood out with her assignments.</p>
-                <footer>
+            <blockquote class="reviews__bq">
+                <p>
+                    Danielle Modesti was a brilliant student; always stood
+                    out with her assignments.
+                </p>
+                <footer class="reviews__footer">
                     <cite>Jane Doe</cite><br>
                     Assistant Professor
                 </footer>
             </blockquote>
         </section>
     </main>
-    <footer>
-       <p>&copy; all rights reserved <time datetime="2026">2026</time></p>
+    <footer class="footer">
+        <p>&copy; all rights reserved <time datetime="2026">2026</time></p>
+        <p class="footer__valid-css-badge">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://seu-usuario.github.io/seu-repositorio/css/style.css"
+                target="_blank" rel="noopener noreferrer">
+                <img class="footer__validator-img" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" width="88" height="31">
+            </a>
+        </p>
     </footer>
 </body>
+
 </html>

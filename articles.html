@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Danielle Modesti">
-    <meta name="keywords" content="website, project, html, personal">
-    <meta name="description" content="This is a practical HTML activity in which I create a multiple page website using pure HTML.">
-    <title>Basic HTML Website - Articles</title>
+    <meta name="keywords" content="Website, project, portfolio, html, css, personal, professional">
+    <meta name="description"
+        content="This is a practical CSS activity in which I create a multiple page portfolio website.">
+    <!-- Could have some og tags -->
+    <title>CSS Personal Portfolio</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Ctext%20y=%22.9em%22%20font-size=%2290%22%3E🐈‍⬛%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Black_colour.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Website logo" width="100">
-            <span>Danielle Modesti</span>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="https://placehold.co/100x100/000000/FFF" alt="Website logo" width="100"
+                height="100">
+            <h1>Danielle Modesti</h1>
         </div>
         <nav>
-            <ul>
+            <ul class="header__ul">
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="#">Articles</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul> 
+            </ul>
         </nav>
-        <h1>Articles</h1>
     </header>
-    <main>
-        <article>
+    <section class="hero">
+        <h2 class="hero__title">Articles</h2>
+    </section>
+    <main class="main main-single-column">
+        <article class="main__article">
             <h2>Article 1</h2>
             <p>Some info about the article...</p>
         </article>
-        <article>
+        <article class="main__article">
             <h2>Article 2</h2>
             <p>Some info about the article...</p>
         </article>
-        <article>
+        <article class="main__article">
             <h2>Article 3</h2>
             <p>Some info about the article...</p>
         </article>
     </main>
-    <footer>
-       <p>&copy; all rights reserved <time datetime="2026">2026</time></p>
+    <footer class="footer">
+        <p>&copy; all rights reserved <time datetime="2026">2026</time></p>
+        <p class="footer__valid-css-badge">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://seu-usuario.github.io/seu-repositorio/css/style.css"
+                target="_blank" rel="noopener noreferrer">
+                <img class="footer__validator-img" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" width="88" height="31">
+            </a>
+        </p>
     </footer>
 </body>
+
 </html>
