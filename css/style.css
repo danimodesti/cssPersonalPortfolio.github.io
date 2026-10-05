@@ -29,7 +29,7 @@ textarea {
     --font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
 
     /* IMAGES */
-    --bg-image-link: url("https://placehold.co/1000x400/99e1d9/FFFFFF/png");
+    --bg-image-link: url("https://placehold.co/1000x400/99e1d9/99e1d9/png");
 
     /* COLORS */
     --font-color: #5d576b;
@@ -68,7 +68,7 @@ textarea {
         --font-color: #e0ddcf;
         --reviews-citation-color: #f1f0ea;
         --highlight-link-color: #f1f0ea;
-        --bg-image-link: url("https://placehold.co/1000x400/474448/FFFFFF/png");
+        --bg-image-link: url("https://placehold.co/1000x400/474448/474448/png");
         --outline: 3px solid #f1f0ea;
         --button-color: #e0ddcf;
         --form-border: 3px solid #e0ddcf;
@@ -196,6 +196,7 @@ a:focus-visible img {
 }
 
 /* || FOOTER */
+
 .footer {
     text-align: center;
     margin-top: 1rem;
@@ -218,7 +219,11 @@ a:focus-visible img {
     padding: 20px;
     width: 100%;
     text-align: center;
+    background-color: var(--header-bg-color);
     background-image: var(--bg-image-link);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     transition:
         font-size 500ms ease,
         filter 500ms ease,
@@ -230,11 +235,12 @@ a:focus-visible img {
 .hero__title:hover {
     cursor: default;
     filter: brightness(1.1);
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding: 20vh 20px;
 }
 
 /* MAIN */
+
 .main {
     margin-top: 0.2rem;
     display: flex;
