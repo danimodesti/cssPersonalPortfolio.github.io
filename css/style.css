@@ -151,12 +151,6 @@ a:focus-visible img {
         opacity 300ms ease;
 }
 
-.header__logo-img:hover {
-    cursor: pointer;
-    transform: translateY(-3px);
-    opacity: 0.7;
-}
-
 .header__ul {
     display: flex;
     gap: 1rem;
@@ -182,10 +176,6 @@ a:focus-visible img {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 600ms ease;
-}
-
-.header__ul a:hover::after {
-    transform: scaleX(1);
 }
 
 .header__ul li:not(:last-child)::after {
@@ -230,13 +220,6 @@ a:focus-visible img {
         padding 500ms ease;
     filter: brightness(1);
     border-bottom: var(--header-border);
-}
-
-.hero__title:hover {
-    cursor: default;
-    filter: brightness(1.1);
-    font-size: 2.5rem;
-    padding: 20vh 20px;
 }
 
 /* MAIN */
@@ -399,10 +382,6 @@ a:focus-visible img {
     transition: opacity 400ms ease;
 }
 
-.contact__form button:hover {
-    opacity: 0.8;
-}
-
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
@@ -530,5 +509,28 @@ a:focus-visible img {
     .contact__form p {
         width: 50%;
         text-align: left;
+    }
+}
+
+@media (hover: hover) {
+    .header__logo-img:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        opacity: 0.7;
+    }
+
+    .header__ul a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .hero__title:hover {
+        cursor: default;
+        filter: brightness(1.1);
+        font-size: 2.5rem;
+        padding: 20vh 20px;
+    }
+
+    .contact__form button:hover {
+        opacity: 0.8;
     }
 }
